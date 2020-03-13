@@ -72,12 +72,21 @@ void restart() {
   _storyNumber = 0;
 }
 
+bool buttonShouldBeVisible() {
+    //You could also just check if (_storyNumber < 3)
+    if (_storyNumber == 0 || _storyNumber == 1 || _storyNumber == 2) {
+      return true;
+    } else {
+         return false;
+    }
+}
+
 }
 
 
 
 
-//TODO: Step 25 - Change the storyNumber property into a private property so that only story_brain.dart has access to it. You can do this by right clicking on the name (storyNumber) and selecting Refactor -> Rename to make the change across all the places where it's used.
+
 
 
 
