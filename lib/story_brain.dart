@@ -2,6 +2,9 @@
 import 'story.dart';
 //TODO: Step 5 - Create a new class called StoryBrain.
 class StoryBrain {
+
+  int storyNumber = 0;
+    
   List<Story> _storyData = [
     
  Story(
