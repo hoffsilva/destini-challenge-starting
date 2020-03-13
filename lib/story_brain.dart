@@ -63,7 +63,13 @@ void nextStory(int choiceNumber) {
       storyNumber = 5;
     } else if (choiceNumber == 2 && storyNumber == 2) {
       storyNumber = 4;
+    } else if (storyNumber == 3 || storyNumber == 4 || storyNumber == 5) {
+      restart();
     }
+}
+
+void restart() {
+  storyNumber = 0;
 }
 
 }
@@ -76,8 +82,6 @@ void nextStory(int choiceNumber) {
 
 
 //TODO: Step 20 - Download the story plan here: https://drive.google.com/uc?export=download&id=1KU6EghkO9Hf2hRM0756xFHgNaZyGCou3
-
-//TODO: Step 21 - Using the story plan, update nextStory() to change the storyNumber depending on the choice made by the user. e.g. if choiceNumber was equal to 1 and the storyNumber is 0, the storyNumber should become 2.
 
 //TODO: Step 22 - In nextStory() if the storyNumber is equal to 3 or 4 or 5, that means it's the end of the game and it should call a method called restart() that resets the storyNumber to 0.
 
